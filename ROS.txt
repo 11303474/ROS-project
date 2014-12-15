@@ -1,0 +1,33 @@
+http://www.calis-it.de/robotics/robot_operating_system/ros_pi_opencv_ffmpeg/
+
+sd-kaart formateren in EXT4 voor raspbian!!
+
+
+sudo apt-get install
+	libboost_filesystem-dev
+	libboost_program_options-dev
+	python-dev
+	libtinyxml-dev
+
+warning:
+	skipping gtest 'rospack-utest' in project 'rospack'
+	skipping gtest 'roslib-utest' in project 'roslib'
+	skipping gtest 'roslib-test_package' in project 'roslib'
+	[29] skipping gtest 'rostime-test_time' in project 'rostime'
+	[33] skipping gtest 'rosconsole-utest' in project 'rosconsole
+	[33] skipping gtest 'rosconsole-assertion_test' in project 'rosconsole'
+	[33] skipping gtest 'rosconsole-thread_test' in project'rosconsole'
+	[34] skipping gtest 'test_roslz4' in project 'roslz4'
+
+		gtest not found, c++ test can not be build. please instal the gtest headers blobally in your system to enable gtest
+			install libgtest-dev
+	[35] swp{b} use is deprecated for ARMv6 and ARMv7
+	[36] skipping gtest 'test_permuter' in project'rostest'
+
+error:
+	[35] unable to find the requested Boost libraries; boost version: 1.49.0; boost include path: /user/include; the following Boost libraries can not been found: boost_regex
+		install libboost-regex-dev
+	[35] could not find BZip2 (missing: BZIP2_LIBRARIES BZIP2_INCLUDE_DIR)
+		install libbz2-dev
+	[41] unable to find the requested boost libraries; boost version: 1.49.0; boost include path: /user/include; the following Boost libraries can not been found: boost_signals 
+		install libboost-signals-dev
